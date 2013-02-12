@@ -50,11 +50,14 @@ class MyFrame(wx.Frame):
         obj.SetValue(s)
         obj.Refresh()
 
-# end of class MyFrame
-if __name__ == "__main__":
+def runapp():
     app = wx.PySimpleApp(0)
     wx.InitAllImageHandlers()
     frame_1 = MyFrame(None, -1, "")
     app.SetTopWindow(frame_1)
     frame_1.Show()
     app.MainLoop()
+
+# end of class MyFrame
+if __name__ == "__main__":
+    runapp()

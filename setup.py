@@ -14,9 +14,8 @@ opts = {
         "excludes":excludes,
         "dll_excludes":dll_excludes,
         "packages":packages,
-        "bundle_files": 2,
-        "compressed": 1, # compress the library archive
-
+        "bundle_files": 1, #2,
+        "compressed": 1, # compress the library archive    
     } 
 }       
-setup(windows=["guikindlepaste.py"], options=opts)
+setup(windows=["kindlepaste.py"], options=opts, zipfile=None)

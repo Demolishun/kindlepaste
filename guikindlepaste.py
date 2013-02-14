@@ -43,9 +43,10 @@ class MyFrame(wx.Frame):
     def evtTextEdit(self, event):  # wxGlade: MyFrame.<event_handler>
         #print dir(event)
         obj = event.GetEventObject()
-        temp = event.String
+        t1 = event.String
         #print dir(temp)
-        s = temp.replace(u'\xA0\xA0',u'\x0D')
+        t2 = t1.replace(u'\xA0\xA0',u'\x0D')
+        s = t2.replace(u'\xA0','')
         #print s
         obj.SetValue(s)
         obj.Refresh()
